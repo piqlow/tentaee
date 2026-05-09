@@ -1,0 +1,16 @@
+section.word {
+  display: flex;
+}
+
+section.word > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid black;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 50px;
+  border-bottom: 2px solid white;
+}

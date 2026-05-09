@@ -16,3 +16,5 @@ export const words = [
   "caminhao",
   "jojo-todynho",
 ];
+
+export default words;
