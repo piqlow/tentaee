@@ -1,0 +1,13 @@
+section.family-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  max-width: 450px;
+}
+
+section.family-chips > span {
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}

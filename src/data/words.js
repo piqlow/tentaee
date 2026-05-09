@@ -1,0 +1,18 @@
+export const words = [
+  "geralda",
+  "marli",
+  "claudia",
+  "daniela",
+  "dayane",
+  "francisco",
+  "marmita",
+  "negro",
+  "amarelo",
+  "azul",
+  "feijao",
+  "fatima",
+  "floriza",
+  "monstro",
+  "caminhao",
+  "jojo-todynho",
+];
