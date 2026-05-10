@@ -44,3 +44,21 @@ section.keyboard > .row {
 .row > .wrong {
   background-color: red;
 }
+
+@media (max-width: 480px) {
+  section.keyboard {
+    gap: 5px;
+    margin-block: 20px 12px;
+  }
+
+  section.keyboard > .row {
+    gap: 3px;
+  }
+
+  .key {
+    padding: 8px 5px;
+    font-size: 12px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+}
