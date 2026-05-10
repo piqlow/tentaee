@@ -18,7 +18,7 @@ main {
   align-items: center;
   width: 100%;
   /* border: 1px solid red; */
-  height: 100vh;
+  height: 100dvh;
   font-family: "Hanken Grotesk", sans-serif;
   text-align: center;
   position: relative;
