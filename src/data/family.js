@@ -1,48 +1,48 @@
 export const family = [
   {
     name: "Geralda",
-    backgroundColor: "#E2680F", // laranja quente
-    color: "#F9F4DA",
+    backgroundColor: "#666666", // cinza
+    color: "#FFFFFF",
   },
   {
     name: "Marli",
-    backgroundColor: "#328AF1", // azul vivo
-    color: "#F9F4DA",
+    backgroundColor: "#FFFFFF", // branco
+    color: "#000000",
   },
   {
     name: "Claudia",
-    backgroundColor: "#9C27B0", // roxo elegante
-    color: "#F9F4DA",
+    backgroundColor: "#666666", // cinza
+    color: "#FFFFFF",
   },
   {
     name: "Daniela",
-    backgroundColor: "#2ED3E9", // ciano
-    color: "#1E1E1E",
+    backgroundColor: "#FFFFFF", // branco
+    color: "#000000",
   },
   {
     name: "Dayane",
-    backgroundColor: "#FF6F61", // coral moderno
-    color: "#1E1E1E",
+    backgroundColor: "#666666", // cinza
+    color: "#FFFFFF",
   },
   {
     name: "Yuri",
-    backgroundColor: "#599137", // verde forte
-    color: "#F9F4DA",
+    backgroundColor: "#FFFFFF", // branco
+    color: "#000000",
   },
   {
     name: "Cesar",
-    backgroundColor: "#FFD742", // amarelo destaque
-    color: "#1E1E1E",
+    backgroundColor: "#666666", // cinza
+    color: "#FFFFFF",
   },
   {
     name: "Marcelo",
-    backgroundColor: "#D02B2B", // vermelho intenso
-    color: "#F9F4DA",
+    backgroundColor: "#FFFFFF", // branco
+    color: "#000000",
   },
   {
     name: "Leandrão",
-    backgroundColor: "#2D519F", // azul final boss 😈
-    color: "#F9F4DA",
+    backgroundColor: "#666666", // cinza
+    color: "#FFFFFF",
   },
 ];
 

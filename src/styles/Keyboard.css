@@ -1,0 +1,42 @@
+section.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-block: 20px 20px;
+}
+
+section.keyboard > .row {
+  display: flex;
+  gap: 6px;
+}
+
+.key {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 8px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 40px;
+  text-align: center;
+}
+
+.key:hover {
+  background-color: #555;
+}
+
+.key:active {
+  background-color: #777;
+}
+
+.row > .correct {
+  background-color: green;
+}
+
+.row > .wrong {
+  background-color: red;
+}

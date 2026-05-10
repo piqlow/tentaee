@@ -3,7 +3,8 @@ section.family-chips {
   flex-wrap: wrap;
   gap: 4px;
   justify-content: center;
-  max-width: 450px;
+  max-width: 400px;
+  margin-block: 20px 36px;
 }
 
 section.family-chips > span {
