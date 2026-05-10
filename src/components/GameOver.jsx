@@ -8,7 +8,7 @@ export default function GameStatus(props) {
       <h2>{props.isGameWon ? "Você salvou à todos!" : "Oque você fez???"}</h2>
       <p>
         {props.isGameWon
-          ? "Parabémns, graças ao seu conhecimento, a família dos sigmas estão à salvo."
+          ? "Parabéns, graças ao seu conhecimento, a família dos sigmas estão à salvo."
           : "ASSASINO!!! Você matou a fámilia de todos os sigmas..."}
       </p>
     </section>
