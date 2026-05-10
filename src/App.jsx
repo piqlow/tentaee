@@ -1,5 +1,6 @@
 import { useState } from "react";
 import clsx from "clsx";
+import Confetti from "react-confetti";
 import "./styles/App.css";
 
 import Header from "./components/Header";
@@ -47,8 +48,15 @@ export default function App() {
 
   const opacityClass = clsx({ "opacity-50": isGameOver });
 
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
   return (
     <main>
+      {isGameWon && (
+        <Confetti width={width} height={height} numberOfPieces={40} />
+      )}
+
       <Header isGameOver={isGameOver} />
 
       {isGameOver && (

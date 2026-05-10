@@ -16,7 +16,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 650px;
+  width: 100%;
   /* border: 1px solid red; */
   height: 100vh;
   font-family: "Hanken Grotesk", sans-serif;
