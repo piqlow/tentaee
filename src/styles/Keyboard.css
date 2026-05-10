@@ -25,6 +25,10 @@ section.keyboard > .row {
   text-align: center;
 }
 
+.key:disabled {
+  opacity: 0.5;
+}
+
 .key:hover {
   background-color: #555;
 }

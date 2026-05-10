@@ -1,4 +1,5 @@
 import "../styles/Word.css";
+import clsx from "clsx";
 
 export default function Word(props) {
   const letterElements = props.currentWord.split("").map((letter, i) => {
@@ -7,5 +8,9 @@ export default function Word(props) {
       <span key={i}>{shouldRevealLetter ? letter.toUpperCase() : ""}</span>
     );
   });
-  return <section className="word">{letterElements}</section>;
+  return (
+    <section className={clsx("word", { "opacity-50": props.isGameOver })}>
+      {letterElements}
+    </section>
+  );
 }

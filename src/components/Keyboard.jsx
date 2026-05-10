@@ -9,13 +9,14 @@ export default function Keyboard(props) {
 
   useEffect(() => {
     function handleKeyDown(e) {
-      if (e.key >= "a" && e.key <= "z") {
+      if (e.key >= "a" && e.key <= "z" && !props.isGameOver) {
         props.addGuessedLetter(e.key);
       }
     }
 
     document.addEventListener("keydown", handleKeyDown);
-  }, []);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [props]);
 
   function createButtons(letters) {
     return letters.split("").map((letter) => {
@@ -33,6 +34,7 @@ export default function Keyboard(props) {
             wrong: isWrong,
           })}`}
           onClick={() => props.addGuessedLetter(letter)}
+          disabled={props.isGameOver}
         >
           {letter.toUpperCase()}
         </button>
@@ -41,7 +43,7 @@ export default function Keyboard(props) {
   }
 
   return (
-    <section className="keyboard">
+    <section className={clsx("keyboard", { "opacity-50": props.isGameOver })}>
       <div className="row">{createButtons(topRow)}</div>
       <div className="row">{createButtons(middleRow)}</div>
       <div className="row">{createButtons(bottomRow)}</div>

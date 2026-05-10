@@ -1,4 +1,5 @@
 import "../styles/FamilyChips.css";
+import clsx from "clsx";
 
 export default function FamilyChips(props) {
   const familyChips = props.family.map((member, i) => {
@@ -7,7 +8,11 @@ export default function FamilyChips(props) {
       color: member.color,
     };
     return (
-      <span key={i} style={styles}>
+      <span
+        key={i}
+        style={styles}
+        className={clsx({ "opacity-50": props.isGameOver })}
+      >
         {member.name}
       </span>
     );

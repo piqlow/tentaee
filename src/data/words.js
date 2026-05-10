@@ -10,6 +10,7 @@ export const words = [
   "amarelo",
   "azul",
   "feijao",
+  "azul-feijão",
   "fatima",
   "floriza",
   "monstro",

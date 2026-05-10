@@ -1,0 +1,25 @@
+.new-game {
+  font-size: 20px;
+  background-color: white;
+  padding: 15px 36px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 250ms all ease;
+  position: absolute;
+  margin: 0 auto 130px;
+  width: max-content;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.new-game:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.new-game:active {
+  background-color: rgb(192, 192, 192);
+}

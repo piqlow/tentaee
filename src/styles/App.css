@@ -21,4 +21,5 @@ main {
   height: 100vh;
   font-family: "Hanken Grotesk", sans-serif;
   text-align: center;
+  position: relative;
 }
