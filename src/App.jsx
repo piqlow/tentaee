@@ -15,6 +15,20 @@ export default function App() {
   const [currentWord, setCurrentWord] = useState(() => getRandomWord());
   const [guessedLetters, setGuessedLetters] = useState([]);
 
+  const wrongGuessCount = guessedLetters.filter(
+    (letter) => !currentWord.includes(letter),
+  ).length;
+  const isGameWon = currentWord
+    .split("")
+    .every((letter) => guessedLetters.includes(letter));
+  const isGameLost = wrongGuessCount >= family.length;
+  const isGameOver = isGameWon || isGameLost;
+
+  // dev
+  console.log(
+    `\nGame Viewer\nGuess: ${guessedLetters.length}\nWrong Guess: ${wrongGuessCount}\nisGameWon: ${isGameWon}\nisGameLost: ${isGameLost}`,
+  );
+
   function addGuessedLetter(letter) {
     setGuessedLetters((prev) =>
       prev.includes(letter) ? prev : [...prev, letter],

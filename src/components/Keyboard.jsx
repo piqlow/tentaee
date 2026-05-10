@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "../styles/Keyboard.css";
 import clsx from "clsx";
 
@@ -5,6 +6,16 @@ export default function Keyboard(props) {
   const topRow = "qwertyuiop";
   const middleRow = "asdfghjkl";
   const bottomRow = "zxcvbnm";
+
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.key >= "a" && e.key <= "z") {
+        props.addGuessedLetter(e.key);
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+  }, []);
 
   function createButtons(letters) {
     return letters.split("").map((letter) => {
