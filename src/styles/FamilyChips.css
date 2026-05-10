@@ -11,4 +11,19 @@ section.family-chips > span {
   padding: 4px;
   border-radius: 4px;
   font-size: 1.25rem;
+  position: relative;
+}
+
+.chip-dead::before {
+  content: "💀";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.chip-dead {
+  opacity: 0.5;
 }

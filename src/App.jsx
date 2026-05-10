@@ -17,9 +17,9 @@ export default function App() {
   const [currentWord, setCurrentWord] = useState(() => getRandomWord());
   const [guessedLetters, setGuessedLetters] = useState(["-"]);
 
-  const wrongGuessCount = guessedLetters.filter(
-    (letter) => !currentWord.includes(letter),
-  ).length;
+  const wrongGuessCount = guessedLetters
+    .filter((letter) => letter !== "-")
+    .filter((letter) => !currentWord.includes(letter)).length;
   const isGameWon = currentWord
     .split("")
     .every((letter) => guessedLetters.includes(letter));
@@ -59,7 +59,11 @@ export default function App() {
         />
       )}
 
-      <FamilyChips family={family} isGameOver={isGameOver} />
+      <FamilyChips
+        family={family}
+        isGameOver={isGameOver}
+        wrongGuessCount={wrongGuessCount}
+      />
 
       <Word
         currentWord={currentWord}

@@ -11,7 +11,10 @@ export default function FamilyChips(props) {
       <span
         key={i}
         style={styles}
-        className={clsx({ "opacity-50": props.isGameOver })}
+        className={clsx({
+          "opacity-50": props.isGameOver,
+          "chip-dead": props.wrongGuessCount > i,
+        })}
       >
         {member.name}
       </span>
